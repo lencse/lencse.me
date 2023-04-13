@@ -24,16 +24,10 @@ lint: node_modules
 	$(PRETTIER) --plugin-search-dir=. --check .
 	$(BIN)/eslint .
 
-verify: lint check-types test
-
-test: node_modules
-	$(BIN)/jest --coverage
+verify: lint check-types
 
 check-types: node_modules
 	$(TSC) -p . --noEmit
 
-.tmp:
-	mkdir -p .tmp
-
-dev: node_modules .tmp
+dev: node_modules
 	$(ASTRO) dev --port 4100
