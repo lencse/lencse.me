@@ -6,11 +6,10 @@ postSlug: adding-new-posts-in-astropaper-theme
 featured: true
 draft: false
 tags:
-  - docs
-ogImage: ""
-description:
-  Some rules & recommendations for creating or adding new posts using AstroPaper
-  theme.
+    - docs
+ogImage: ''
+description: Some rules & recommendations for creating or adding new posts using AstroPaper
+    theme.
 ---
 
 Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
@@ -46,12 +45,12 @@ If you omit `tags` in a blog post (in other words, if no tag is specified), the 
 ```ts
 // src/contents/_schemas.ts
 export const blogSchema = z.object({
-  // ---
-  // replace "others" with whatever you want
-  tags: z.array(z.string()).default(["others"]),
-  ogImage: z.string().optional(),
-  description: z.string(),
-});
+    // ---
+    // replace "others" with whatever you want
+    tags: z.array(z.string()).default(['others']),
+    ogImage: z.string().optional(),
+    description: z.string(),
+})
 ```
 
 ### Sample Frontmatter
@@ -68,10 +67,10 @@ postSlug: the-title-of-the-post
 featured: true
 draft: false
 tags:
-  - some
-  - example
-  - tags
-ogImage: ""
+    - some
+    - example
+    - tags
+ogImage: ''
 description: This is the example description of the example post.
 ---
 ```
@@ -110,8 +109,8 @@ When you put images in the blog post, it is recommended that the image is compre
 
 My recommendation for image compression sites.
 
-- [TinyPng](https://tinypng.com/)
-- [TinyJPG](https://tinyjpg.com/)
+-   [TinyPng](https://tinypng.com/)
+-   [TinyJPG](https://tinyjpg.com/)
 
 ### OG Image
 

@@ -6,9 +6,9 @@ postSlug: dynamic-og-image-generation-in-astropaper-blog-posts
 featured: false
 draft: false
 tags:
-  - docs
-  - release
-ogImage: ""
+    - docs
+    - release
+ogImage: ''
 description: New feature in AstroPaper v1.4.0, introducing dynamic OG image generation for blog posts.
 ---
 
@@ -34,8 +34,8 @@ In AstroPaper v1.4.0, Vercel's [Satori](https://github.com/vercel/satori) packag
 
 Dynamic OG images will be generated at build time for blog posts that
 
-- don't include OG image in the frontmatter
-- are not marked as draft.
+-   don't include OG image in the frontmatter
+-   are not marked as draft.
 
 ## Anatomy of AstroPaper dynamic OG image
 
@@ -46,7 +46,7 @@ Dynamic OG image of AstroPaper includes _the blog post title_, _author name_ and
 
 At the time of writing this, [Satori](https://github.com/vercel/satori) is fairly new and has not reached major release yet. So, there are still some limitations to this dynamic OG image feature.
 
-- If you have Blog posts with non-English titles, you have to set `embedFonts` option to `false` (file: `src/utils/generateOgImage.tsx`). Even after this, the OG image might not be displayed very well.
-- Besides, RTL languages are not supported yet.
-- [Using emoji](https://github.com/vercel/satori#emojis) in the title might be a little bit tricky.
-- Sadly, this new dynamic OG image generation feature cannot be used for Twitter social images since `svg` image type is not supported for Twitter Cards.
+-   If you have Blog posts with non-English titles, you have to set `embedFonts` option to `false` (file: `src/utils/generateOgImage.tsx`). Even after this, the OG image might not be displayed very well.
+-   Besides, RTL languages are not supported yet.
+-   [Using emoji](https://github.com/vercel/satori#emojis) in the title might be a little bit tricky.
+-   Sadly, this new dynamic OG image generation feature cannot be used for Twitter social images since `svg` image type is not supported for Twitter Cards.
