@@ -3,7 +3,7 @@ import type { Site, SocialObjects } from './types'
 export const SITE: Site = {
     website: 'https://lencse.me',
     author: 'Lencse',
-    desc: 'Levente Löki\'s personal blog',
+    desc: "Levente Löki's personal blog",
     title: 'lencse.me',
     ogImage: 'astropaper-og.jpg', // @TODO
     lightAndDarkMode: false,
