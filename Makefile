@@ -24,7 +24,7 @@ lint: node_modules
 	$(PRETTIER) --plugin-search-dir=. --check .
 	$(BIN)/eslint .
 
-verify: lint check-types
+verify: lint check-types dist
 
 check-types: node_modules
 	$(TSC) -p . --noEmit
